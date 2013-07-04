@@ -1,0 +1,229 @@
+BSM_ADDM
+ADDM
+
+BSM_Analytics
+Analytics
+
+BSM_AssetCore
+AssetCore
+
+BSM_Atrium_Orchestrator
+Atrium Orchestrator
+AO
+
+BSM_BBCA
+BBCA
+
+BSM_BBNA
+BBNA
+
+BSM_BEM_SIM
+
+BSM_BladeLogic
+BladeLogic
+
+BSM_BladeLogic_Reporting
+BladeLogic Reporting
+
+BSM_BPM
+BPM
+
+BSM_BRPM
+BRPM
+
+BSM_CLM
+CLM
+
+BSM_CMDB
+CMDB
+
+BSM_Control_M
+Control_M
+Control M
+Control-M
+
+BSM_Control/SA
+Control/SA
+
+BSM_EBC_Real_Time_Environment
+EBC
+EBC Real Time Environment
+
+BSM_Entuity
+Entuity
+
+BSM_ITSM
+ITSM
+Help Desk
+Service Desk
+IT
+
+BSM_MYIT
+MYIT
+
+BSM_ProactiveNet
+ProactiveNet
+
+BSM_R&D Production Environment
+R&D
+R&D Production Environment
+
+BSM_SRM
+SRM
+
+BSM_TM_ART
+TM ART
+
+CE_ADDM
+ADDM
+
+CE_BPM
+BPM
+
+CE_SIEM
+SIEM
+
+Applications.bmc.com
+apps
+BMC apps
+bmc applications
+application
+
+intranet.bmc.com
+intranet
+sharepoint
+SP
+bmc intranet
+
+Oracle Database Hosting
+Oracle
+Oracle DB
+
+SQL Database Hosting
+SQL
+SQL DB
+
+Power
+Outage
+
+Information Security Service
+Information Security
+
+McAfee EMM
+McAfee
+EMM
+
+McAfee Suite
+Suite
+McAfee
+
+Wireless Networking
+Wireless
+Wifi
+Network
+Wifi Network
+Wi-Fi
+LAN
+WLAN
+Internet
+Connection
+Router
+Ethernet
+
+Desktop Hardware Services
+Desktop
+Monitor
+Laptop
+Mouse
+Keyboard
+USB
+Screen
+Tablet
+Hard drive
+Hardware
+
+Desktop Phones
+Phone call
+Phone
+Speaker phone
+
+Desktop Software Services
+Software
+Desktop Backup
+Virus
+Sharepoint
+Windows
+OS
+operating system 
+
+Email
+Email account
+account
+mailbox
+
+Internet Explorer
+IE
+Explorer
+i.e.
+
+Microsoft Exchange
+Exchange
+MS Exchange
+Exchange Server
+Exchange online
+
+Microsoft Office
+Office
+MS Office
+Excel
+Word
+Powerpoint 
+OneNote
+Outlook
+
+Microsoft Visio
+Visio
+MS Visio
+VB
+visual basic
+
+Microsoft Windows
+Windows
+
+OUtlook Web Access
+Outlook
+Webmail
+OWA
+Email
+Adprod
+
+WebEx
+Conferencing
+web-ex
+
+finance.bmc.com
+bmc finance
+
+Oracle HR
+HR
+Oracle
+
+Microsoft Lync Click to Call
+Lync
+MS Lync
+
+Voicemail
+Voicemail message
+
+VPN
+beacon
+beacon-pc
+Cisco anyconnect
+
+Order_Management_Portal
+Order management
+
+Salesforce.com
+SFDC 
+Salesforce
+

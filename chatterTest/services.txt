@@ -1,0 +1,261 @@
+BSM_@_BMC,Nandu Mahadevan,BSM_ADDM,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_Analytics,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_AssetCore,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_Atrium_Orchestrator,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_BBCA,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_BBNA,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_BEM_SIM,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_BladeLogic,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_BladeLogic_Reporting,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_BPM,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_BRPM,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_CLM,COTS
+BSM_@_BMC,Nandu Mahadevan,BSM_CMDB,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_Control/SA,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_Control_M,COTS
+BSM_@_BMC,Nandu Mahadevan,BSM_EBC_Real_Time_Environment,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_Entuity,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_ITSM,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_MYIT,COTS
+BSM_@_BMC,Nandu Mahadevan,BSM_ProactiveNet,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_R&D Production Environment,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_SRM,ESM
+BSM_@_BMC,Nandu Mahadevan,BSM_TM_ART,ESM
+BSM_@_BMC,Nandu Mahadevan,CE_ADDM,ESM
+BSM_@_BMC,Nandu Mahadevan,CE_BPM,ESM
+BSM_@_BMC,Nandu Mahadevan,CE_SIEM,ESM
+Business Intelligence,Andre Lanthier,Apos,COTS
+Business Intelligence,Andre Lanthier,Business Objects,COTS
+Business Intelligence,Andre Lanthier,Informatica,COTS
+Business Intelligence,Andre Lanthier,Informatica B2B SWIFT,ASP
+Business Intelligence,Andre Lanthier,MicroStrategy,COTS
+Business Intelligence,Andre Lanthier,Noetix,COTS
+Business Intelligence,Andre Lanthier,Tableau,COTS
+Collaboration Automation,Geeta Pyne,Akamai,ASP
+Collaboration Automation,Geeta Pyne,Applications.bmc.com,COTS
+Collaboration Automation,Geeta Pyne,BMC Managed File Transfer,ASP
+Collaboration Automation,Geeta Pyne,Clickability,ASP
+Collaboration Automation,Geeta Pyne,Confluence - ESM Content Solution & Delivery Wiki,COTS
+Collaboration Automation,Geeta Pyne,Contacts DB,Custom
+Collaboration Automation,Geeta Pyne,Content Repository and Search,ASP
+Collaboration Automation,Geeta Pyne,CWW-Legacy,COTS
+Collaboration Automation,Geeta Pyne,Documentum,COTS
+Collaboration Automation,Geeta Pyne,intranet.bmc.com,COTS
+Collaboration Automation,Geeta Pyne,MSM_IDD_InfoCenter,COTS
+Collaboration Automation,Geeta Pyne,SSO - Single Sign On Registration,Custom
+Collaboration Automation,Geeta Pyne,www.bmc.com,COTS
+Customer Care Automation,Aatish Shroff,Avaya IP Agent,COTS
+Customer Care Automation,Aatish Shroff,Baywatch,COTS
+Customer Care Automation,Aatish Shroff,Clearspace/Jive,COTS
+Customer Care Automation,Aatish Shroff,eFix,Custom
+Customer Care Automation,Aatish Shroff,iSearch,COTS
+Customer Care Automation,Aatish Shroff,NICE,COTS
+Customer Care Automation,Aatish Shroff,OCMS_StarPound,ASP
+Customer Care Automation,Aatish Shroff,One3,COTS
+Customer Care Automation,Aatish Shroff,Qualtrics,ASP
+Customer Care Automation,Aatish Shroff,Rally,ASP
+Customer Care Automation,Aatish Shroff,Sapience,ASP
+Customer Care Automation,Aatish Shroff,SDE Magic CS System,COTS
+Customer Care Automation,Aatish Shroff,Staging.marimba.com,Custom
+Customer Care Automation,Aatish Shroff,Support Site,ASP
+Customer Care Automation,Aatish Shroff,Trisoft,COTS
+Data Administration,Randy Scheers,Imperva SecureSphere,COTS
+Data Administration,Randy Scheers,IPLocks,COTS
+Data Administration,Randy Scheers,Netezza Database Hosting,IT-Service
+Data Administration,Randy Scheers,Oracle Database Hosting,IT-Service
+Data Administration,Randy Scheers,SQL Database Hosting,IT-Service
+Data Center Operations,Sandeep Kulkarni,Back-Up_And_Recovery_Services,IT-Service
+Data Center Operations,Sandeep Kulkarni,Citrix,COTS
+Data Center Operations,Sandeep Kulkarni,File & Print Services,IT-Service
+Data Center Operations,Sandeep Kulkarni,FTP Services,COTS
+Data Center Operations,Sandeep Kulkarni,Imperva Application Firewall,COTS
+Data Center Operations,Sandeep Kulkarni,Infoblox,IT-Service
+Data Center Operations,Sandeep Kulkarni,Information Security Service,IT-Service
+Data Center Operations,Sandeep Kulkarni,LDAP,COTS
+Data Center Operations,Sandeep Kulkarni,McAfee EMM,COTS
+Data Center Operations,Sandeep Kulkarni,McAfee Suite,COTS
+Data Center Operations,Sandeep Kulkarni,Passwordstate,ASP
+Data Center Operations,Sandeep Kulkarni,Power,IT-Service
+Data Center Operations,Sandeep Kulkarni,Storage Hosting,IT-Service
+Data Center Operations,Sandeep Kulkarni,UNIX Hosting,IT-Service
+Data Center Operations,Sandeep Kulkarni,Virtual_Center_Prod,COTS
+Data Center Operations,Sandeep Kulkarni,Windows Hosting,IT-Service
+Data Center Operations,Sandeep Kulkarni,Wireless Networking,IT-Service
+Education Automation,Shaun Baker,Perception,ASP
+Education Automation,Shaun Baker,SABA,COTS
+Education Automation,Shaun Baker,View Central,ASP
+End User Services,Becky Strauss,Avamar,COTS
+End User Services,Becky Strauss,Blackberry,COTS
+End User Services,Becky Strauss,Desktop Hardware Services,IT-Service
+End User Services,Becky Strauss,Desktop Phones,IT-Service
+End User Services,Becky Strauss,Desktop Software Services,IT-Service
+End User Services,Becky Strauss,Email,IT-Service
+End User Services,Becky Strauss,Internet Explorer,COTS
+End User Services,Becky Strauss,LiveMeeting,ASP
+End User Services,Becky Strauss,Microsoft Communicator,COTS
+End User Services,Becky Strauss,Microsoft Exchange,COTS
+End User Services,Becky Strauss,Microsoft Office,COTS
+End User Services,Becky Strauss,Microsoft Project,COTS
+End User Services,Becky Strauss,Microsoft Visio,COTS
+End User Services,Becky Strauss,Microsoft Windows,COTS
+End User Services,Becky Strauss,MoDM,ASP
+End User Services,Becky Strauss,Outlook Web Access,COTS
+End User Services,Becky Strauss,VDI,ASP
+End User Services,Becky Strauss,WebEx,ASP
+ESM Product Development Automation,Mark Bennett,Appscan,COTS
+ESM Product Development Automation,Mark Bennett,Build and Packaging - ESM,Custom
+ESM Product Development Automation,Mark Bennett,Chuckwagon,Custom
+ESM Product Development Automation,Mark Bennett,CM/Synergy,Custom
+ESM Product Development Automation,Mark Bennett,Code Collaborator,COTS
+ESM Product Development Automation,Mark Bennett,CVS_Source_Code,COTS
+ESM Product Development Automation,Mark Bennett,ESM R&D Confluence Wiki,COTS
+ESM Product Development Automation,Mark Bennett,ESM R&D JIRA Pilot,COTS
+ESM Product Development Automation,Mark Bennett,FeaturePlan,COTS
+ESM Product Development Automation,Mark Bennett,GEP,COTS
+ESM Product Development Automation,Mark Bennett,Klocwork,COTS
+ESM Product Development Automation,Mark Bennett,Mercury Interactive,COTS
+ESM Product Development Automation,Mark Bennett,Milkbone - Remedy Quality Management,COTS
+ESM Product Development Automation,Mark Bennett,Perforce,COTS
+ESM Product Development Automation,Mark Bennett,Quality_Center,COTS
+ESM Product Development Automation,Mark Bennett,RemedyOnDemand,ESM
+ESM Product Development Automation,Mark Bennett,Silk Performer,COTS
+ESM Product Development Automation,Mark Bennett,SourceSafe,COTS
+ESM Product Development Automation,Mark Bennett,Virtual_Center_R_&_D,COTS
+ESM Product Development Automation,Mark Bennett,VMWare_ESX_R_&_D,COTS
+Finance Automation,Anish Patankar,American Express @ Work,ASP
+Finance Automation,Anish Patankar,Assure,Custom
+Finance Automation,Anish Patankar,Audit Command Language,COTS
+Finance Automation,Anish Patankar,BankServe,ASP
+Finance Automation,Anish Patankar,Blackline,ASP
+Finance Automation,Anish Patankar,Bloomberg,ASP
+Finance Automation,Anish Patankar,Commissions,Custom
+Finance Automation,Anish Patankar,Corp Tax ETS,COTS
+Finance Automation,Anish Patankar,Currenex,ASP
+Finance Automation,Anish Patankar,Equity Edge,ASP
+Finance Automation,Anish Patankar,FieldGlass,ASP
+Finance Automation,Anish Patankar,finance.bmc.com,Custom
+Finance Automation,Anish Patankar,Financed Receivables,Custom
+Finance Automation,Anish Patankar,Hyperion Essbase,COTS
+Finance Automation,Anish Patankar,Hyperion Financial Management,COTS
+Finance Automation,Anish Patankar,Hyperion Financial Planning,COTS
+Finance Automation,Anish Patankar,IT2,COTS
+Finance Automation,Anish Patankar,Misys,ASP
+Finance Automation,Anish Patankar,Navision - Numara ERP,COTS
+Finance Automation,Anish Patankar,Oracle Exchange,COTS
+Finance Automation,Anish Patankar,Oracle Fixed Assets,COTS
+Finance Automation,Anish Patankar,Oracle General Ledger,COTS
+Finance Automation,Anish Patankar,Oracle GRC,COTS
+Finance Automation,Anish Patankar,Oracle iExpense,COTS
+Finance Automation,Anish Patankar,Oracle Incentive Compensation,COTS
+Finance Automation,Anish Patankar,Oracle iProcurement,COTS
+Finance Automation,Anish Patankar,Oracle Payables,COTS
+Finance Automation,Anish Patankar,Oracle Projects,COTS
+Finance Automation,Anish Patankar,Oracle Purchasing,COTS
+Finance Automation,Anish Patankar,Oracle Time and Labor,COTS
+Finance Automation,Anish Patankar,Royalty Management,Custom
+Finance Automation,Anish Patankar,SANTA,Custom
+Finance Automation,Anish Patankar,SOX DB,Custom
+Finance Automation,Anish Patankar,Tax Stream,COTS
+Finance Automation,Anish Patankar,Teammate,COTS
+Finance Automation,Anish Patankar,Thompson Sales Tax,COTS
+Human Resources Automation,Kristi Jenkins,ADP,ASP
+Human Resources Automation,Kristi Jenkins,Axiom,ASP
+Human Resources Automation,Kristi Jenkins,Fidelity,ASP
+Human Resources Automation,Kristi Jenkins,Guardian e-Verify,ASP
+Human Resources Automation,Kristi Jenkins,Hewitt,ASP
+Human Resources Automation,Kristi Jenkins,iLearn@BMC,ASP
+Human Resources Automation,Kristi Jenkins,iOffice,ASP
+Human Resources Automation,Kristi Jenkins,OnBoard,ASP
+Human Resources Automation,Kristi Jenkins,Oracle HR,COTS
+Human Resources Automation,Kristi Jenkins,Oracle Talent Management,COTS
+Human Resources Automation,Kristi Jenkins,Peopleclick,ASP
+Human Resources Automation,Kristi Jenkins,Remedy Time Off,Custom
+Human Resources Automation,Kristi Jenkins,Skillsoft,ASP
+Human Resources Automation,Kristi Jenkins,The Work Number,ASP
+Human Resources Automation,Kristi Jenkins,TimeMatters,COTS
+Integration,Geeta Pyne,Oracle BPA Suite,COTS
+Integration,Geeta Pyne,Oracle SOA Suite,COTS
+Integration,Geeta Pyne,VLTrader Middleware File Transfer,COTS
+Integration,Geeta Pyne,WebMethods,COTS
+Integration,Geeta Pyne,WebSphere,COTS
+IT Management,Bret Settle,DR Excercise,IT-Service
+IT Management,Bret Settle,ITBM,ESM
+IT Management,Bret Settle,ITBM_M_And_A,ESM
+IT Management,Bret Settle,LDRPS,COTS
+IT Management,Bret Settle,Microsoft Project Server,COTS
+IT Management,Bret Settle,Raven Flow,COTS
+Marketing Automation,Shaun Baker,Babcock & Jenkins,ASP
+Marketing Automation,Shaun Baker,BMC Events,Custom
+Marketing Automation,Shaun Baker,BSM Assessment Application,COTS
+Marketing Automation,Shaun Baker,Eloqua,ASP
+Marketing Automation,Shaun Baker,Logo Store,Custom
+Marketing Automation,Shaun Baker,Omniture,ASP
+Marketing Automation,Shaun Baker,Proactive Notification (PN),COTS
+Master Data Management,Brijmohan Sharma,Dataflux,COTS
+Master Data Management,Brijmohan Sharma,Informatica_MDM_Hub,COTS
+MSM Product Development Automation,dan Zubkoff,APTS/Side A,Custom
+MSM Product Development Automation,dan Zubkoff,APTS/Side B,Custom
+MSM Product Development Automation,dan Zubkoff,CICS,COTS
+MSM Product Development Automation,dan Zubkoff,CompareX,COTS
+MSM Product Development Automation,dan Zubkoff,DB2,COTS
+MSM Product Development Automation,dan Zubkoff,Endeavor,Custom
+MSM Product Development Automation,dan Zubkoff,IMS,COTS
+MSM Product Development Automation,dan Zubkoff,MainView,COTS
+MSM Product Development Automation,dan Zubkoff,MIM (Multi-Image Manager),COTS
+MSM Product Development Automation,dan Zubkoff,Proteus,Custom
+MSM Product Development Automation,dan Zubkoff,RACF,COTS
+MSM Product Development Automation,dan Zubkoff,SAS,COTS
+MSM Product Development Automation,dan Zubkoff,SMUF/APTS,Custom
+MSM Product Development Automation,dan Zubkoff,WebSphere for Mainframes,COTS
+MSM Product Development Automation,dan Zubkoff,z/Linux,COTS
+MSM Product Development Automation,dan Zubkoff,z/OS,COTS
+Networking & Telephony,Sandeep Kulkarni,Avaya PBX,IT-Service
+Networking & Telephony,Sandeep Kulkarni,Firewall,IT-Service
+Networking & Telephony,Sandeep Kulkarni,LAN,IT-Service
+Networking & Telephony,Sandeep Kulkarni,Load Balancer,IT-Service
+Networking & Telephony,Sandeep Kulkarni,Microsoft Lync Click to Call,COTS
+Networking & Telephony,Sandeep Kulkarni,Proxy,IT-Service
+Networking & Telephony,Sandeep Kulkarni,Voicemail,IT-Service
+Networking & Telephony,Sandeep Kulkarni,VPN,IT-Service
+Networking & Telephony,Sandeep Kulkarni,WAN,IT-Service
+Networking & Telephony,Sandeep Kulkarni,WAN Circuit,IT-Service
+Non_IT_Related_Business Services,Christopher Moore,External - Remedy onDemand POC/Trials,ESM
+Non_IT_Related_Business Services,Christopher Moore,External_ITBM,ESM
+Order Management Automation,Chip Legarde,Automated Contract Request,Custom
+Order Management Automation,Chip Legarde,Avalara,COTS
+Order Management Automation,Chip Legarde,Big Machines,COTS
+Order Management Automation,Chip Legarde,BladeLogic Licensing Portal,COTS
+Order Management Automation,Chip Legarde,Charge Logic,ASP
+Order Management Automation,Chip Legarde,CLEM,Custom
+Order Management Automation,Chip Legarde,Collections,Custom
+Order Management Automation,Chip Legarde,Commissions Helpdesk,Custom
+Order Management Automation,Chip Legarde,CompTrak,COTS
+Order Management Automation,Chip Legarde,CRMS,Custom
+Order Management Automation,Chip Legarde,Customer First,Custom
+Order Management Automation,Chip Legarde,EPD,Custom
+Order Management Automation,Chip Legarde,Exemption Certificate Management,COTS
+Order Management Automation,Chip Legarde,Kofax Capture,COTS
+Order Management Automation,Chip Legarde,License Key Generator,Custom
+Order Management Automation,Chip Legarde,MK Denial,ASP
+Order Management Automation,Chip Legarde,OE+,Custom
+Order Management Automation,Chip Legarde,Optio,COTS
+Order Management Automation,Chip Legarde,Oracle Contracts Repository,COTS
+Order Management Automation,Chip Legarde,Oracle Receivables,COTS
+Order Management Automation,Chip Legarde,Order_Management_Portal,Custom
+Order Management Automation,Chip Legarde,OZI,Custom
+Order Management Automation,Chip Legarde,PAC,Custom
+Order Management Automation,Chip Legarde,Remedy License Shelf,Custom
+Order Management Automation,Chip Legarde,Revenue Accounting,Custom
+Order Management Automation,Chip Legarde,Siebel,COTS
+Order Management Automation,Chip Legarde,Trilogy,COTS
+Order Management Automation,Chip Legarde,Vertex,COTS
+Professional Services Automation,Shaun Baker,Open Air,ASP
+Professional Services Automation,Shaun Baker,Planview,COTS
+Sales Automation,Shaun Baker,BMC_Demo_Cloud,IT-Service
+Sales Automation,Shaun Baker,C4,IT-Service
+Sales Automation,Shaun Baker,Chatter,ASP
+Sales Automation,Shaun Baker,Interspire Application,COTS
+Sales Automation,Shaun Baker,Redbook,Custom
+Sales Automation,Shaun Baker,Response Export to Salesforce,Custom
+Sales Automation,Shaun Baker,Salesforce.com,ASP
+Sales Automation,Shaun Baker,Salesforce.com (Numara),ASP
