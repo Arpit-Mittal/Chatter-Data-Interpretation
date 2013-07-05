@@ -1,7 +1,7 @@
 import com.salesforce.chatter.authentication.ChatterAuthMethod;
 import com.salesforce.chatter.authentication.IChatterData;
 
-
+// Chatter Data class
 public class ChatterData implements IChatterData {
 
 	private final String apiVersion = "24.0";
