@@ -9,7 +9,7 @@ public class ChatterData implements IChatterData {
 
     private final ChatterAuthMethod authMethod = ChatterAuthMethod.PASSWORD;
     private final String username = "fkoung@bmc.com";
-    private final String password = "1579cDzH";
+    private final String password = "Pass1234";
 
     private final String clientKey = "3MVG9A2kN3Bn17hsUcmLTAtRJ.5leZf87Ra6FmfEM587jDaCeGBxb1Mjm5cPdvZekNZod4l0E_r0xz1whrIMH";
     private final String clientSecret = "6048817529047401290";
