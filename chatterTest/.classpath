@@ -16,9 +16,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/chatterJARs/chatter-1.0.jar"/>
-	<classpathentry kind="lib" path="E:/chatterJARs/commons-httpclient-3.1.jar"/>
-	<classpathentry kind="lib" path="E:/chatterJARs/jackson-core-asl-1.7.0.jar"/>
-	<classpathentry kind="lib" path="E:/chatterJARs/jackson-mapper-asl-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/FKOUNG/Desktop/JARs/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/FKOUNG/Desktop/JARs/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/FKOUNG/Desktop/JARs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/FKOUNG/Desktop/JARs/jackson-core-asl-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/FKOUNG/Desktop/JARs/jackson-mapper-asl-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/FKOUNG/Desktop/JARs/json-20090211.jar"/>
+	<classpathentry kind="lib" path="C:/Sites/chatter/build/libs/chatter-1.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

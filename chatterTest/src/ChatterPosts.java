@@ -48,6 +48,7 @@ public class ChatterPosts {
         HttpMethod result = service.executeCommand(cmd);
         
         Set<ChatterDataEntry> posts = new HashSet<ChatterDataEntry>();
+        Map<String,Integer> serviceFrequencies = new TreeMap<String,Integer>(String.CASE_INSENSITIVE_ORDER);
         int counter = 1;
 		while(true) {
 			JsonNode feedItemPage = mapper.readValue(result.getResponseBodyAsStream(), JsonNode.class);
@@ -67,13 +68,16 @@ public class ChatterPosts {
 	        	
 	        	entry.setNumComments(Integer.parseInt(feedItem.path("comments").path("total").toString()));
 	        	
-	        	parse(entry); //Get technical service, business service, class
+	        	parse(entry,serviceFrequencies); //Get technical service, business service, class
 	        	
-	        	System.out.println(entry);
 	        	posts.add(entry);
 	        	
 	        	counter++;
 	        	if(counter > numPosts) {
+	        		for(ChatterDataEntry cur : posts) {
+	        			if(cur.getTechnicalService().equals("N/A")) continue;
+	        			cur.setFrequencyScore(serviceFrequencies.get(cur.getTechnicalService()));
+	        		}
 	        		return posts;
 	        	}
 	        }
@@ -81,6 +85,10 @@ public class ChatterPosts {
 	        if(nextPageUrl.equals("null")) break;
 	        ChatterCommand nextPageCmd = new GetNextFeedItems(nextPageUrl);
 	        result = service.executeCommand(nextPageCmd);
+		}
+		for(ChatterDataEntry cur : posts) {
+			if(cur.getTechnicalService().equals("N/A")) continue;
+			cur.setFrequencyScore(serviceFrequencies.get(cur.getTechnicalService())/posts.size());
 		}
 		return posts;
 	}
@@ -124,7 +132,7 @@ public class ChatterPosts {
 		return aliases;
 	}
 	
-	private static void parse(ChatterDataEntry entry) throws IOException {
+	private static void parse(ChatterDataEntry entry, Map<String,Integer> serviceFrequencies) throws IOException {
 		//Load technical services
 		Map<String,String> TStoBS = new TreeMap<String,String>(String.CASE_INSENSITIVE_ORDER);
 		Set<String> technicalServices = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
@@ -150,6 +158,10 @@ public class ChatterPosts {
 				entry.setTechnicalService(phrase);
 				entry.setBusinessService(TStoBS.get(phrase));
 				entry.setEntryClass("IT");
+				
+				if(serviceFrequencies.containsKey(phrase)) serviceFrequencies.put(phrase,serviceFrequencies.get(phrase)+1);
+				else serviceFrequencies.put(phrase, 1);
+				
 				return;
 			}
 		}

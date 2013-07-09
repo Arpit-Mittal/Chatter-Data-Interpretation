@@ -27,8 +27,10 @@ public class chatterTester {
 				System.out.println(phrase+" "+curFreq.get(phrase));
 			}
 		}*/
-		//Set<ChatterDataEntry> hist = ChatterPosts.getDataEntries(50);
 		Set<ChatterDataEntry> hist = ChatterPosts.getDataEntries(50);
+		for(ChatterDataEntry entry : hist) {
+			System.out.println(entry);
+		}
 	}
 	
 	public static Map<String,Integer> getPhraseFrequencies(Set<ChatterDataEntry> posts) {

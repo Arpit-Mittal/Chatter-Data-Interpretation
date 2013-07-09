@@ -63,6 +63,7 @@ MYIT
 
 BSM_ProactiveNet
 ProactiveNet
+BPPM
 
 BSM_R&D Production Environment
 R&D
@@ -84,16 +85,11 @@ CE_SIEM
 SIEM
 
 Applications.bmc.com
-apps
 BMC apps
-bmc applications
-application
+BMC applications
 
 intranet.bmc.com
-intranet
-sharepoint
-SP
-bmc intranet
+Intranet
 
 Oracle Database Hosting
 Oracle
@@ -108,27 +104,18 @@ Outage
 
 Information Security Service
 Information Security
+ISS
 
 McAfee EMM
-McAfee
 EMM
 
-McAfee Suite
-Suite
-McAfee
-
 Wireless Networking
-Wireless
 Wifi
-Network
-Wifi Network
 Wi-Fi
-LAN
+Wireless Network
 WLAN
 Internet
-Connection
 Router
-Ethernet
 
 Desktop Hardware Services
 Desktop
@@ -143,49 +130,28 @@ Hard drive
 Hardware
 
 Desktop Phones
-Phone call
 Phone
-Speaker phone
-
-Desktop Software Services
-Software
-Desktop Backup
-Virus
-Sharepoint
-Windows
-OS
-operating system 
-
-Email
-Email account
-account
-mailbox
 
 Internet Explorer
 IE
-Explorer
-i.e.
+I.E.
 
 Microsoft Exchange
 Exchange
 MS Exchange
-Exchange Server
-Exchange online
 
 Microsoft Office
-Office
-MS Office
 Excel
 Word
-Powerpoint 
+Powerpoint
 OneNote
 Outlook
 
+
 Microsoft Visio
 Visio
-MS Visio
 VB
-visual basic
+Visual Basic
 
 Microsoft Windows
 Windows
@@ -198,32 +164,31 @@ Email
 Adprod
 
 WebEx
-Conferencing
-web-ex
-
-finance.bmc.com
-bmc finance
+Web-Ex
+Teleconference
 
 Oracle HR
 HR
-Oracle
 
 Microsoft Lync Click to Call
 Lync
-MS Lync
-
-Voicemail
-Voicemail message
 
 VPN
-beacon
-beacon-pc
-Cisco anyconnect
+Beacon
+Beacon-PC
+Cisco AnyConnect
 
 Order_Management_Portal
-Order management
+Order Management
 
 Salesforce.com
 SFDC 
 Salesforce
+
+RemedyOnDemand
+RoD
+
+Clearspace/Jive
+Jive
+BMC Communities
 
