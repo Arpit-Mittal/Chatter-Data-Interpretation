@@ -76,7 +76,7 @@ public class ChatterPosts {
 	        	if(counter > numPosts) {
 	        		for(ChatterDataEntry cur : posts) {
 	        			if(cur.getTechnicalService().equals("N/A")) continue;
-	        			cur.setFrequencyScore(serviceFrequencies.get(cur.getTechnicalService()));
+	        			cur.setFrequencyScore(serviceFrequencies.get(cur.getTechnicalService())/posts.size());
 	        		}
 	        		return posts;
 	        	}
@@ -151,7 +151,7 @@ public class ChatterPosts {
 		Map<String,String> aliases = loadAliases("aliases.txt");
 		
 		//Fill in technical service, business service, and class
-		List<String> phrases = generateAllPhrases(entry.getPost().replaceAll("#",""));
+		List<String> phrases = generateAllPhrases(cleanPost(entry.getPost()));
 		for(String phrase : phrases) {
 			if(aliases.containsKey(phrase)) phrase = aliases.get(phrase);
 			if(technicalServices.contains(phrase)) {
@@ -169,5 +169,10 @@ public class ChatterPosts {
 		entry.setTechnicalService("N/A");
 		entry.setBusinessService("N/A");
 		entry.setEntryClass("NON-IT");
+	}
+	
+	private static String cleanPost(String post) {
+		//return post.replaceAll("#","").replaceAll("\"","").replaceAll("\\(","");
+		return post.replaceAll("[^ 0-9a-zA-Z\\/\\-]","");
 	}
 }

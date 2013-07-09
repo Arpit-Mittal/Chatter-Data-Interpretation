@@ -18,12 +18,16 @@ BSM_BBNA
 BBNA
 
 BSM_BEM_SIM
+BEM
+SIM
 
 BSM_BladeLogic
-BladeLogic
+Bladelogic
+BDA
+Database automation
 
 BSM_BladeLogic_Reporting
-BladeLogic Reporting
+Bladelogic Reporting
 
 BSM_BPM
 BPM
@@ -37,43 +41,42 @@ CLM
 BSM_CMDB
 CMDB
 
+BSM_Control/SA
+Control/SA
+
 BSM_Control_M
 Control_M
 Control M
 Control-M
 
-BSM_Control/SA
-Control/SA
-
 BSM_EBC_Real_Time_Environment
 EBC
-EBC Real Time Environment
 
 BSM_Entuity
 Entuity
 
 BSM_ITSM
+Mobility
+Remedy
 ITSM
-Help Desk
 Service Desk
-IT
+Help Desk
 
 BSM_MYIT
-MYIT
+MyIT
 
 BSM_ProactiveNet
-ProactiveNet
 BPPM
+ProactiveNet
 
 BSM_R&D Production Environment
-R&D
-R&D Production Environment
 
 BSM_SRM
 SRM
 
 BSM_TM_ART
 TM ART
+TMART
 
 CE_ADDM
 ADDM
@@ -84,111 +87,561 @@ BPM
 CE_SIEM
 SIEM
 
+Apos
+
+Business Objects
+
+Informatica
+
+Informatica B2B SWIFT
+
+MicroStrategy
+
+Noetix
+
+Tableau
+
+Akamai
+
 Applications.bmc.com
-BMC apps
-BMC applications
+
+BMC Managed File Transfer
+
+Clickability
+
+Confluence - ESM Content Solution & Delivery Wiki
+Confluence
+
+Contacts DB
+
+Content Repository and Search
+
+CWW-Legacy
+
+Documentum
 
 intranet.bmc.com
 Intranet
 
+MSM_IDD_InfoCenter
+Infocenter
+
+SSO - Single Sign On Registration
+SSO
+
+www.bmc.com
+BMC website
+
+Avaya IP Agent
+Avaya
+
+Baywatch
+
+Clearspace/Jive
+Clearspace
+Jive
+BMC Communities
+
+eFix
+
+iSearch
+
+NICE
+
+OCMS_StarPound
+OCMS
+StarPound
+
+One3
+
+Qualtrics
+
+Rally
+
+Sapience
+
+SDE Magic CS System
+SDE
+
+Staging.marimba.com
+Marimba
+
+Support Site
+
+Trisoft
+
+Imperva SecureSphere
+SecureSphere
+
+IPLocks
+
+Netezza Database Hosting
+Netezza
+
 Oracle Database Hosting
 Oracle
-Oracle DB
 
 SQL Database Hosting
 SQL
-SQL DB
 
-Power
-Outage
+Back-Up_And_Recovery_Services
+Backup
+Back up
+Recovery
+
+Citrix
+
+File & Print Services
+Printer
+Printing
+Print
+
+FTP Services
+FTP
+
+Imperva Application Firewall
+Firewall
+
+Infoblox
 
 Information Security Service
-Information Security
-ISS
+
+LDAP
 
 McAfee EMM
 EMM
 
+McAfee Suite
+
+Passwordstate
+
+Power
+
+Storage Hosting
+
+UNIX Hosting
+
+Virtual_Center_Prod
+
+Windows Hosting
+
 Wireless Networking
+Wi-fi
 Wifi
-Wi-Fi
 Wireless Network
 WLAN
-Internet
-Router
+Internet connection
+
+Perception
+
+SABA
+
+View Central
+
+Avamar
+
+Blackberry
 
 Desktop Hardware Services
 Desktop
-Monitor
 Laptop
 Mouse
 Keyboard
-USB
-Screen
-Tablet
-Hard drive
-Hardware
+Monitor
 
 Desktop Phones
 Phone
+
+Desktop Software Services
+
+Email
+E-mail
 
 Internet Explorer
 IE
 I.E.
 
+LiveMeeting
+
+Microsoft Communicator
+Communicator
+
 Microsoft Exchange
 Exchange
-MS Exchange
 
 Microsoft Office
+Office
 Excel
 Word
+Access
 Powerpoint
-OneNote
-Outlook
 
+Microsoft Project
 
 Microsoft Visio
 Visio
-VB
-Visual Basic
 
 Microsoft Windows
-Windows
 
-OUtlook Web Access
-Outlook
+MoDM
+
+Outlook Web Access
 Webmail
-OWA
-Email
-Adprod
+
+VDI
 
 WebEx
 Web-Ex
+Teleconferencing
 Teleconference
 
+Appscan
+
+Build and Packaging - ESM
+ESM
+
+Chuckwagon
+
+CM/Synergy
+CM
+Synergy
+
+Code Collaborator
+
+CVS_Source_Code
+CVS
+
+ESM R&D Confluence Wiki
+
+ESM R&D JIRA Pilot
+
+FeaturePlan
+
+GEP
+
+Klocwork
+
+Mercury Interactive
+Mercury
+
+Milkbone - Remedy Quality Management
+Milkbone
+
+Perforce
+
+Quality_Center
+
+RemedyOnDemand
+
+Silk Performer
+
+SourceSafe
+
+Virtual_Center_R_&_D
+Virtual Center
+
+VMWare_ESX_R_&_D
+ESX
+
+American Express @ Work
+
+Assure
+
+Audit Command Language
+
+BankServe
+
+Blackline
+
+Bloomberg
+
+Commissions
+
+Corp Tax ETS
+ETS
+
+Currenex
+
+Equity Edge
+
+FieldGlass
+
+finance.bmc.com
+
+Financed Receivables
+
+Hyperion Essbase
+Essbase
+
+Hyperion Financial Management
+
+Hyperion Financial Planning
+
+IT2
+
+Misys
+
+Navision - Numara ERP
+ERP
+
+Oracle Exchange
+
+Oracle Fixed Assets
+Fixed Assets
+
+Oracle General Ledger
+General Ledger
+
+Oracle GRC
+GRC
+
+Oracle iExpense
+iExpense
+
+Oracle Incentive Compensation
+Incentive Compensation
+
+Oracle iProcurement
+iProcurement
+
+Oracle Payables
+
+Oracle Projects
+
+Oracle Purchasing
+
+Oracle Time and Labor
+
+Royalty Management
+
+SANTA
+
+SOX DB
+
+Tax Stream
+
+Teammate
+
+Thompson Sales Tax
+
+ADP
+
+Axiom
+
+Fidelity
+
+Guardian e-Verify
+e-Verify
+
+Hewitt
+
+iLearn@BMC
+iLearn
+
+iOffice
+
+OnBoard
+
 Oracle HR
-HR
+Oracle
+
+Oracle Talent Management
+
+Peopleclick
+
+Remedy Time Off
+
+Skillsoft
+
+The Work Number
+
+TimeMatters
+
+Oracle BPA Suite
+BPA
+
+Oracle SOA Suite
+SOA
+
+VLTrader Middleware File Transfer
+VLTrader
+
+WebMethods
+
+WebSphere
+
+DR Excercise
+
+ITBM
+
+ITBM_M_And_A
+
+LDRPS
+
+Microsoft Project Server
+
+Raven Flow
+
+Babcock & Jenkins
+Babcock
+Jenkins
+
+BMC Events
+
+BSM Assessment Application
+
+Eloqua
+
+Logo Store
+
+Omniture
+
+Proactive Notification (PN)
+PN
+
+Dataflux
+
+Informatica_MDM_Hub
+
+APTS/Side A
+
+APTS/Side B
+
+CICS
+
+CompareX
+
+DB2
+
+Endeavor
+
+IMS
+
+MainView
+
+MIM (Multi-Image Manager)
+MIM
+
+Proteus
+
+RACF
+
+SAS
+
+SMUF/APTS
+SMUF
+APTS
+
+WebSphere for Mainframes
+
+z/Linux
+
+z/OS
+
+Avaya PBX
+PBX
+
+Firewall
+
+LAN
+
+Load Balancer
 
 Microsoft Lync Click to Call
 Lync
 
+Proxy
+
+Voicemail
+
 VPN
-Beacon
-Beacon-PC
-Cisco AnyConnect
+
+WAN
+
+WAN Circuit
+
+External - Remedy onDemand POC/Trials
+
+External_ITBM
+
+Automated Contract Request
+
+Avalara
+
+Big Machines
+
+BladeLogic Licensing Portal
+
+Charge Logic
+
+CLEM
+
+Collections
+
+Commissions Helpdesk
+
+CompTrak
+
+CRMS
+
+Customer First
+
+EPD
+
+Exemption Certificate Management
+
+Kofax Capture
+
+License Key Generator
+
+MK Denial
+
+OE+
+
+Optio
+
+Oracle Contracts Repository
+
+Oracle Receivables
 
 Order_Management_Portal
-Order Management
+Order Management Portal
+
+OZI
+
+PAC
+
+Remedy License Shelf
+
+Revenue Accounting
+
+Siebel
+
+Trilogy
+
+Vertex
+
+Open Air
+
+Planview
+
+BMC_Demo_Cloud
+Demo Cloud
+
+C4
+
+Chatter
+
+Interspire Application
+Interspire
+
+Redbook
+
+Response Export to Salesforce
 
 Salesforce.com
-SFDC 
 Salesforce
+SFDC
 
-RemedyOnDemand
-RoD
-
-Clearspace/Jive
-Jive
-BMC Communities
+Salesforce.com (Numara)
 
