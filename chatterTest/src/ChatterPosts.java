@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.LinkedList;
@@ -9,6 +10,11 @@ import java.util.StringTokenizer;
 import java.util.TreeMap;
 import java.util.HashSet;
 import java.util.TreeSet;
+
+import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
 
 import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.lang3.StringEscapeUtils;
@@ -24,21 +30,22 @@ import com.salesforce.chatter.commands.ChatterCommand;
 public class ChatterPosts {
 	
 	private static final int MAX_PHRASE_LENGTH = 5;
+	private static final int BODY_COL = 5;
 	
-	public static Set<ChatterDataEntry> getSampleDataEntries(String filename) throws IOException, NumberFormatException, JSONException {
+	public static Set<ChatterDataEntry> getSampleDataEntries(String filename) throws BiffException, IOException {
 		Set<ChatterDataEntry> entries = new HashSet<ChatterDataEntry>();
-		
-		BufferedReader in = new BufferedReader(new FileReader(filename));
 		Map<String,Integer> serviceFrequencies = new TreeMap<String,Integer>(String.CASE_INSENSITIVE_ORDER);
-		String curLine;
-		while((curLine = in.readLine()) != null) {
+		
+		Workbook wb = Workbook.getWorkbook(new File(filename));
+		Sheet sheet = wb.getSheet(0);
+		for(int i = 1; i < sheet.getRows(); i++) { //Skip headers
+			Cell cell = sheet.getCell(BODY_COL,i);
+			String post = cell.getContents();
 			ChatterDataEntry entry = new ChatterDataEntry();
-			entry.setPost(curLine);
-			//entry.setSentimentScore(Chatterbox.getAngerLevel(curLine));
+			entry.setPost(post);
 			parse(entry,serviceFrequencies);
 			entries.add(entry);
 		}
-		in.close();
 		for(ChatterDataEntry cur : entries) {
 			if(cur.getTechnicalService().equals("N/A")) continue;
 			cur.setFrequencyScore((double)serviceFrequencies.get(cur.getTechnicalService())/entries.size());
@@ -52,7 +59,7 @@ public class ChatterPosts {
 		ChatterCommand cmd = new GetCompanyFeedItems();
         HttpMethod result = service.executeCommand(cmd);
         
-        Set<ChatterDataEntry> posts = new HashSet<ChatterDataEntry>();
+        Set<ChatterDataEntry> entries = new HashSet<ChatterDataEntry>();
         Map<String,Integer> serviceFrequencies = new TreeMap<String,Integer>(String.CASE_INSENSITIVE_ORDER);
         int counter = 1;
 		while(true) {
@@ -60,7 +67,7 @@ public class ChatterPosts {
 	        for(JsonNode feedItem : feedItemPage.path("items")) {
 	        	JsonNode userDesc = feedItem.path("actor");
 	        	if(!userDesc.path("type").toString().equals("\"User\"")) continue; //Don't care if not posted by user
-	        	
+	        	if(!feedItem.path("type").equals("\"TextPost\"") && !feedItem.path("type").equals("\"UserStatus\"") && !feedItem.path("type").equals("\"ContentPost\"") && !feedItem.path("type").equals("\"LinkPost\"")) continue;
 	        	ChatterDataEntry entry = new ChatterDataEntry();
 	        	
 	        	entry.setUser(stripQuotes(userDesc.path("name").toString())); //Get user
@@ -69,33 +76,41 @@ public class ChatterPosts {
 	        	JsonNode feedBodyText = feedItem.path("body").path("text");
 	        	String post = StringEscapeUtils.unescapeJava(StringEscapeUtils.unescapeHtml4(feedBodyText.toString()));
 	        	post = stripQuotes(post);
+	        	
 	        	entry.setPost(post);
 	        	
 	        	entry.setNumComments(Integer.parseInt(feedItem.path("comments").path("total").toString()));
 	        	
 	        	parse(entry,serviceFrequencies); //Get technical service, business service, class
 	        	
-	        	posts.add(entry);
+	        	entries.add(entry);
 	        	
 	        	counter++;
 	        	if(counter > numPosts) {
-	        		for(ChatterDataEntry cur : posts) {
+	        		for(ChatterDataEntry cur : entries) {
 	        			if(cur.getTechnicalService().equals("N/A")) continue;
-	        			cur.setFrequencyScore((double)serviceFrequencies.get(cur.getTechnicalService())/posts.size());
+	        			cur.setFrequencyScore((double)serviceFrequencies.get(cur.getTechnicalService())/entries.size());
 	        		}
-	        		return posts;
+	        		return entries;
 	        	}
 	        }
 	        String nextPageUrl = feedItemPage.path("nextPageUrl").toString();
-	        if(nextPageUrl.equals("null")) break;
+	        if(nextPageUrl.equals("null")) {
+	        	System.out.println("ERROR: Ran out of feed item pages.");
+	        	break;
+	        }
+	        if(nextPageUrl.equals("")) {
+	        	System.out.println("ERROR: Reached API usage limit.");
+	        	break;
+	        }
 	        ChatterCommand nextPageCmd = new GetNextFeedItems(nextPageUrl);
 	        result = service.executeCommand(nextPageCmd);
 		}
-		for(ChatterDataEntry cur : posts) {
+		for(ChatterDataEntry cur : entries) {
 			if(cur.getTechnicalService().equals("N/A")) continue;
-			cur.setFrequencyScore((double)serviceFrequencies.get(cur.getTechnicalService())/posts.size());
+			cur.setFrequencyScore((double)serviceFrequencies.get(cur.getTechnicalService())/entries.size());
 		}
-		return posts;
+		return entries;
 	}
 	
 	public static String stripQuotes(String text) {
@@ -152,6 +167,10 @@ public class ChatterPosts {
 			technicalServices.add(ts);
 		}
 		in.close();
+		
+		//Adding cloud services
+		TStoBS.put("Cloud Services", "Cloud Services");
+		technicalServices.add("Cloud Services");
 		
 		Map<String,String> aliases = loadAliases("aliases.txt");
 		

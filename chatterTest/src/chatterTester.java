@@ -1,13 +1,15 @@
 import java.io.*;
 import java.util.*;
 
+import jxl.read.biff.BiffException;
+
 import org.json.JSONException;
 
 import com.salesforce.chatter.authentication.*;
 
 public class chatterTester {
 	
-	public static void main(String[] args) throws IOException, UnauthenticatedSessionException, AuthenticationException, NumberFormatException, JSONException {
+	public static void main(String[] args) throws IOException, UnauthenticatedSessionException, AuthenticationException, NumberFormatException, JSONException, BiffException {
 		/*
 		Set<ChatterDataEntry> hist = ChatterPosts.getDataEntries(800);
 		Map<String,Integer> histFreq = getPhraseFrequencies(hist);
@@ -29,13 +31,10 @@ public class chatterTester {
 			}
 		}*/
 		
-		Set<ChatterDataEntry> entries = ChatterPosts.getSampleDataEntries("sampleData.txt");
-		//publishToCSV(entries);
+		
+		Set<ChatterDataEntry> entries = ChatterPosts.getSampleDataEntries("useCase.xls");
+		publishToCSV(entries);
 		summarize(entries);
-		/*
-		for(ChatterDataEntry entry : entries) {
-			System.out.println(entry);
-		}*/
 	}
 	
 	public static void publishToCSV(Set<ChatterDataEntry> entries) throws IOException {
@@ -50,33 +49,50 @@ public class chatterTester {
 	
 	public static void summarize(Set<ChatterDataEntry> entries) {
 		System.out.println("--------SUMMARY--------");
-		System.out.println("Analyzing last "+entries.size()+" Chatter posts...");
+		System.out.println("Analyzing "+entries.size()+" Chatter posts...");
 		int numIT = 0;
 		for(ChatterDataEntry entry : entries) {
 			if(entry.getEntryClass().equals("IT")) {
 				numIT++;
 			}
 		}
-		System.out.println("Counted " + numIT + " IT-related posts.");
+		System.out.println("Counted " + numIT + " IT-related posts.\n");
+		
 		System.out.println("Trending services:");
-		Set<String> topServices = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
+		class ServiceWithFreq {
+			private String service;
+			private int freq;
+			public ServiceWithFreq(String service, int freq) {
+				this.service = service;
+				this.freq = freq;
+			}
+			public String getService() {
+				return service;
+			}
+			public int getFreq() {
+				return freq;
+			}
+		}
+		class FrequencyComp implements Comparator<ServiceWithFreq> {
+			public int compare(ServiceWithFreq o1, ServiceWithFreq o2) {
+				return o1.getFreq()-o2.getFreq();
+			}
+		}
+		Map<String,Integer> serviceFrequencies = new TreeMap<String,Integer>(String.CASE_INSENSITIVE_ORDER);
 		for(ChatterDataEntry entry : entries) {
-			if(entry.getFrequencyScore() > .02) {
-				topServices.add(entry.getTechnicalService());
-			}
+			if(entry.getEntryClass().equals("NON-IT")) continue;
+			if(serviceFrequencies.containsKey(entry.getTechnicalService())) serviceFrequencies.put(entry.getTechnicalService(),serviceFrequencies.get(entry.getTechnicalService())+1);
+			else serviceFrequencies.put(entry.getTechnicalService(), 1);
 		}
-		for(String service : topServices) {
-			System.out.println(service);
+		Comparator<ServiceWithFreq> comparator = new FrequencyComp();
+		PriorityQueue<ServiceWithFreq> q = new PriorityQueue<ServiceWithFreq>(200,comparator);
+		for(String service : serviceFrequencies.keySet()) {
+			q.add(new ServiceWithFreq(service,-1*serviceFrequencies.get(service)));
 		}
-		System.out.println();
-		System.out.println("Trending topics:");
-		Map<String,Integer> phraseFrequencies = getPhraseFrequencies(entries);
-		for(String phrase : phraseFrequencies.keySet()) {
-			if(phrase.length() < 3) continue;
-			if(!phrase.contains(" ")) continue;
-			if((double)phraseFrequencies.get(phrase)/entries.size() > .15) {
-				System.out.println(phrase);
-			}
+		for(int i = 0; i < 5; i++) {
+			ServiceWithFreq cur = q.poll();
+			System.out.print(cur.getService());
+			System.out.println(" ("+-1*cur.getFreq()+" mentions"+")");
 		}
 	}
 	

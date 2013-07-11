@@ -23,8 +23,9 @@ SIM
 
 BSM_BladeLogic
 Bladelogic
+BNA
 BDA
-Database automation
+Database Automation
 
 BSM_BladeLogic_Reporting
 Bladelogic Reporting
@@ -56,11 +57,18 @@ BSM_Entuity
 Entuity
 
 BSM_ITSM
+FootPrint
+FootPrints
+RKM
 Mobility
 Remedy
+Remedyforce
 ITSM
 Service Desk
 Help Desk
+Passport
+Password Manager
+IS&T
 
 BSM_MYIT
 MyIT
@@ -75,7 +83,6 @@ BSM_SRM
 SRM
 
 BSM_TM_ART
-TM ART
 TMART
 
 CE_ADDM
@@ -122,12 +129,16 @@ Documentum
 
 intranet.bmc.com
 Intranet
+Sharepoint
+Sharepoint.bmc.com
 
 MSM_IDD_InfoCenter
+Docs
 Infocenter
 
 SSO - Single Sign On Registration
 SSO
+Single Sign On
 
 www.bmc.com
 BMC website
@@ -183,6 +194,7 @@ Oracle
 
 SQL Database Hosting
 SQL
+MySQL
 
 Back-Up_And_Recovery_Services
 Backup
@@ -229,6 +241,7 @@ Wireless Networking
 Wi-fi
 Wifi
 Wireless Network
+Wireless
 WLAN
 Internet connection
 
@@ -251,11 +264,14 @@ Monitor
 
 Desktop Phones
 Phone
+Telephone
 
 Desktop Software Services
 
 Email
+Emails
 E-mail
+E-mails
 
 Internet Explorer
 IE
@@ -273,7 +289,6 @@ Microsoft Office
 Office
 Excel
 Word
-Access
 Powerpoint
 
 Microsoft Project
@@ -284,6 +299,7 @@ Visio
 Microsoft Windows
 
 MoDM
+MDM
 
 Outlook Web Access
 Webmail
@@ -436,6 +452,7 @@ e-Verify
 Hewitt
 
 iLearn@BMC
+iLearn@bmc
 iLearn
 
 iOffice
@@ -644,4 +661,8 @@ Salesforce
 SFDC
 
 Salesforce.com (Numara)
+
+Cloud services
+Box.com
+Cloud
 
