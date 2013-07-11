@@ -29,15 +29,20 @@ public class ChatterPosts {
 		Set<ChatterDataEntry> entries = new HashSet<ChatterDataEntry>();
 		
 		BufferedReader in = new BufferedReader(new FileReader(filename));
+		Map<String,Integer> serviceFrequencies = new TreeMap<String,Integer>(String.CASE_INSENSITIVE_ORDER);
 		String curLine;
 		while((curLine = in.readLine()) != null) {
 			ChatterDataEntry entry = new ChatterDataEntry();
-			System.out.println(curLine);
 			entry.setPost(curLine);
-			entry.setSentimentScore(Chatterbox.getAngerLevel(curLine));
+			//entry.setSentimentScore(Chatterbox.getAngerLevel(curLine));
+			parse(entry,serviceFrequencies);
 			entries.add(entry);
 		}
 		in.close();
+		for(ChatterDataEntry cur : entries) {
+			if(cur.getTechnicalService().equals("N/A")) continue;
+			cur.setFrequencyScore((double)serviceFrequencies.get(cur.getTechnicalService())/entries.size());
+		}
 		return entries;
 	}
 	
@@ -76,7 +81,7 @@ public class ChatterPosts {
 	        	if(counter > numPosts) {
 	        		for(ChatterDataEntry cur : posts) {
 	        			if(cur.getTechnicalService().equals("N/A")) continue;
-	        			cur.setFrequencyScore(serviceFrequencies.get(cur.getTechnicalService())/posts.size());
+	        			cur.setFrequencyScore((double)serviceFrequencies.get(cur.getTechnicalService())/posts.size());
 	        		}
 	        		return posts;
 	        	}
@@ -88,7 +93,7 @@ public class ChatterPosts {
 		}
 		for(ChatterDataEntry cur : posts) {
 			if(cur.getTechnicalService().equals("N/A")) continue;
-			cur.setFrequencyScore(serviceFrequencies.get(cur.getTechnicalService())/posts.size());
+			cur.setFrequencyScore((double)serviceFrequencies.get(cur.getTechnicalService())/posts.size());
 		}
 		return posts;
 	}
@@ -171,7 +176,7 @@ public class ChatterPosts {
 		entry.setEntryClass("NON-IT");
 	}
 	
-	private static String cleanPost(String post) {
+	public static String cleanPost(String post) {
 		//return post.replaceAll("#","").replaceAll("\"","").replaceAll("\\(","");
 		return post.replaceAll("[^ 0-9a-zA-Z\\/\\-]","");
 	}

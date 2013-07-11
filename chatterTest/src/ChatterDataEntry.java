@@ -31,19 +31,18 @@ public class ChatterDataEntry {
 	
 	public String toString() {
 		String out = "";
-		out += "User: "+user;
-		out += "\nPost: "+post;
-		out += "\nNumber of comments: "+numComments;
-		out += "\nClass: "+entryClass;
-		out += "\nType: "+entryType;
-		out += "\nSentiment Score: "+sentimentScore;
-		out += "\nFrequency Score: "+frequencyScore;
-		out += "\nPriority: "+entryPriority;
-		out += "\nTechnical Service: "+technicalService;
-		out += "\nBusiness Service: "+businessService;
-		out += "\nUser Organization: "+organization;
-		out += "\nUser Email: "+email;
-		out += "\n--------------------";
+		out += "\""+user+"\",";
+		out += "\""+post.replaceAll("\"","")+"\",";
+		out += "\""+numComments+"\",";
+		out += "\""+entryClass+"\",";
+		out += "\""+entryType+"\",";
+		out += "\""+sentimentScore+"\",";
+		out += "\""+frequencyScore+"\",";
+		out += "\""+entryPriority+"\",";
+		out += "\""+technicalService+"\",";
+		out += "\""+businessService+"\",";
+		out += "\""+organization+"\",";
+		out += "\""+email+"\",";
 		return out;
 	}
 	
